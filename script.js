@@ -9,10 +9,10 @@ do {
     alert('Your guess is too low!')
   } else {
     alert('You got it!')
-    let ans = prompt('Do you want to play agin? (yes/no)')
+    const ans = prompt('Do you want to play again? (yes/no)')
     if (ans === 'yes') {
       age = Math.floor(Math.random() * 20 + 1)
       guess = 0
     }
   }
-} while (age != guess)
+} while (age !== guess)
